@@ -1,0 +1,63 @@
+.conteneur {
+    height: 80vh;
+    background-image: url(img.jpg);
+    background-size: cover;
+}
+
+.entete {
+    display: flex;
+    background-color: rgb(114, 146, 8);
+    /* justify-content: flex-end; */
+    padding: 1.5em 12.2em;
+    margin-left: 1.7em;
+}
+
+.add {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.5em;
+    border-radius: 2em;
+}
+
+input {
+    font-size: 1em;
+    background-color: rgb(43, 216, 72);
+    margin: 1em;
+}
+
+header {
+    text-align: center;
+    background-color: black;
+    color: azure;
+    padding: 1em 3em;
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+    color: azure;
+    padding: 1em 2em;
+}
+
+.icone {
+    /* border: 2px solid; */
+    max-width: 21vw;
+}
+
+.ok {
+    margin-right: 1em;
+    margin-left: 1.5em;
+}
+
+body {
+    margin: 0%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+textarea {
+    /* resize: none; */
+    margin-left: 2em;
+}

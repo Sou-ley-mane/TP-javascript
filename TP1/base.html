@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+</head>
+
+<body>
+
+
+
+    <!-- Cade d'animation -->
+    <script>
+        window.onload = function() {
+            var data = {
+                like: ['vanilla', 'pistachio', 'squirrels', 'squash', 'mountains'],
+                dislike: ['chocolate', 'trucks', 'football', 'hard candy', 'valleys']
+            };
+            var tables = {};
+            var moveMe = function() {
+                this.table = tables[this.table === tables.like ? 'dislike' : 'like'];
+                this.table.tbody.appendChild(this.tr);
+            };
+            Object.keys(data).forEach(function(key) {
+                var container = document.createElement('div'),
+                    table = tables[key] = document.createElement('table'),
+                    tbody = table.tbody = document.createElement('tbody');
+                data[key].forEach(function(item) {
+                    var tr = document.createElement('tr'),
+                        td = document.createElement('td');
+                    td.innerHTML = item;
+                    tr.appendChild(td);
+                    tbody.appendChild(tr);
+                    var button = document.createElement('button');
+                    button.innerHTML = 'move';
+                    button.onclick = moveMe;
+                    button.table = table;
+                    button.tr = tr;
+                    td.appendChild(button);
+                });
+                table.appendChild(tbody);
+                var header = document.createElement('h2');
+                header.innerHTML = key;
+                container.appendChild(header);
+                container.appendChild(table);
+                container.className = 'container';
+                document.getElementById('wrapper').appendChild(container);
+            });
+        };
+    </script>
+
+
+
+</body>
+
+</html>

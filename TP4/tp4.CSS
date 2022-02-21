@@ -1,0 +1,99 @@
+                header {
+                    text-align: center;
+                    border: 3PX solid rgb(123, 52, 216);
+                    background-color: rgb(123, 52, 216);
+                    color: white;
+                }
+                
+                #conteneur {
+                    height: 98vh;
+                    /* border: 3px solid; */
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    margin: 1em;
+                }
+                
+                #suivant {
+                    width: 36vw;
+                }
+                
+                .ok {
+                    background-color: rgb(123, 52, 216);
+                    color: white;
+                    width: 39.3vw;
+                    padding: 2.5em 1em;
+                    margin-top: 3.5em;
+                    border-radius: 0em 0em 2em 2em;
+                }
+                
+                form {
+                    font-size: 2em;
+                }
+                
+                p {
+                    font-size: 2.2em;
+                    font-weight: bold;
+                    font-family: sans-serif;
+                    text-align: center;
+                }
+                
+                .centre {
+                    border: 8px solid rgba(201, 194, 194, 0.596);
+                    width: 40vw;
+                    height: 55.9vh;
+                }
+                
+                .scort {
+                    width: 59em;
+                    border: 10px solid rgba(201, 194, 194, 0.596);
+                    display: flex;
+                    flex-direction: column;
+                    height: 28vh;
+                    justify-items: center;
+                    /* height: 15em; */
+                    text-align: center;
+                    justify-content: center;
+                    margin-top: 3em;
+                }
+                
+                #rejoue {
+                    background-color: rgb(123, 52, 216);
+                    padding: 3em 32.9em;
+                    /* margin-top: 3em; */
+                    color: white;
+                    border-radius: 0em 0em 2em 2em;
+                }
+                
+                #rejoue h1 {
+                    font-size: 2em;
+                }
+                
+                #resultat {
+                    /* border: 3px solid; */
+                    height: 15vh;
+                    font-size: 1.5em;
+                    font-family: sans-serif;
+                    /* background-color: black; */
+                }
+                
+                .formulaire {
+                    margin-left: 2em;
+                }
+                
+                input {
+                    margin: 1.5em;
+                    font-family: sans-serif;
+                }
+                
+                * {
+                    box-sizing: border-box;
+                }
+                
+                footer {
+                    text-align: center;
+                    border: 3PX solid rgb(123, 52, 216);
+                    background-color: rgb(123, 52, 216);
+                    color: white;
+                }

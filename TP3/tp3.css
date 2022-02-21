@@ -1,0 +1,62 @@
+    .affiche {
+        height: 10vh;
+        border: 2px solid;
+        width: 25vw;
+        margin-left: 1em;
+        background-color: blueviolet;
+        margin-bottom: 2em;
+        /* display: flex; */
+    }
+    
+    .valide {
+        margin-left: 89%;
+        padding: 0.5em;
+    }
+    
+    .conteneur {
+        /* background-color: blueviolet; */
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .ok {
+        border: 3px solid;
+        height: 60vh;
+        background-color: rgb(15, 15, 94);
+        border: 15px solid blueviolet;
+    }
+    
+    .items {
+        margin-left: 1em;
+        color: white;
+        font-size: 1.5em;
+    }
+    
+    .genere {
+        background-color: rgb(209, 192, 33);
+        padding: 2em 10em;
+        margin-right: 1em;
+        font-size: 0.6em;
+        color: blueviolet;
+        font-weight: bold;
+    }
+    
+    .long {
+        width: 2vw;
+    }
+    
+    header {
+        background-color: rgb(15, 15, 94);
+        padding: 1em 2em;
+        color: white;
+        text-align: center;
+    }
+    
+    footer {
+        background-color: rgb(15, 15, 94);
+        padding: 1em 2em;
+        color: white;
+        text-align: center;
+    }

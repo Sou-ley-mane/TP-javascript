@@ -1,0 +1,45 @@
+    .parti {
+        height: 30vh;
+        border: 2px solid;
+        width: 25vw;
+        background-color: white;
+    }
+    
+    p:hover {
+        background-color: blue;
+        color: white;
+        padding: 1em 2em;
+    }
+    
+    .conteneur {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 76vh;
+        background-color: rgba(255, 253, 253, 0.972);
+    }
+    
+    .bouton {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .ok {
+        margin: 1em;
+    }
+    
+    header {
+        text-align: center;
+        background-color: blue;
+        padding: 1em 2em;
+        color: white;
+        font-size: 1em;
+    }
+    
+    footer {
+        text-align: center;
+        background-color: blue;
+        padding: 1em 2em;
+        color: white;
+        font-size: 1em;
+    }

@@ -6,42 +6,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="tp3.css">
-    <title>TP3 JAVASCRIPT</title>
+    <script src="https://kit.fontawesome.com/2fcb5cccd1.js" defer crossorigin="anonymous"></script>
+    <title>MOT DE PASSE</title>
 </head>
 
 <body>
-    <header>
-        <h1>MOT DE PASSE</h1>
-    </header>
     <div class="conteneur">
-        <div class="ok">
-            <form action="">text
-                <div class="affiche">
-                    <button class="valide">copie</button>
-                    <!-- ********************** -->
-                </div>
-                <div class="items">
-                    <label for="">Contient des lettres majuscules</label>
-                    <input type="text" class="long"><br><br>
+        <!-- Titre -->
+        <h2>Générateur de mot de passe</h2>
+        <!-- Partie superieur -->
+        <div class="p-header">
+            <input type="text" id="mot_pass">
+            <button type="" class="copy masque" id="copy"><i  class="fa-solid fa-copy"></i></button>
+        </div>
+        <!-- ****FORMULAIRE POUR COCHET LES MOT DE PASSE *************** -->
+        <div class="p-body">
 
-                    <label for="">Contient des lettres majuscules</label>
-                    <input type="checkbox"><br><br>
-                    <label for="">Contient des lettres minuscules</label>
-                    <input type="checkbox"><br><br>
-                    <label for="">Contient des nombres</label>
-                    <input type="checkbox"><br><br>
-                    <label for="">Contient des caracteres spéciaux</label>
-                    <input type="checkbox"><br><br>
-                    <input type="submit" value="Generer Le Mot de Passe" class="genere">
-                </div>
+            <div class="form-controle">
+                <label for="p-longueur">Longueur du mot de passe</label>
+                <input type="number" id="p-longueur" value="15" min="8" max="30">
+            </div>
+            <!-- *********************************************************************** -->
 
-            </form>
+            <div class="form-controle">
+                <label for="p-majus">Contient des lettres majuscules</label>
+                <input type="checkbox" id="p-majus" value="15" min="8" max="30">
+            </div>
+
+            <!-- ************************************************************** -->
+            <div class="form-controle">
+                <label for="p-minus">Contient des lettres minuscules</label>
+                <input type="checkbox" id="p-minus" value="15" min="8" max="30">
+            </div>
+            <!-- ***************************************************************** -->
+
+            <div class="form-controle">
+                <label for="p-nombre">Contient des nombres</label>
+                <input type="checkbox" id="p-nombre" value="15" min="8" max="30">
+            </div>
+            <!-- *************************************************************** -->
+
+
+            <div class="form-controle">
+                <label for="p-symbol">Contient des symboles</label>
+                <input type="checkbox" id="p-symbol" value="15" min="8" max="30">
+            </div>
+            <!-- ********************************************* -->
+            <button id="submit">Generer un mot de passe</button>
+
         </div>
     </div>
-    <footer>
-        <h3>SONATEL ACADEMY</h3>
-    </footer>
 
+
+
+
+
+    <script src="tp3.js"></script>
 </body>
 
 </html>

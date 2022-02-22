@@ -6,50 +6,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="tp4.CSS">
-    <script src="tp4.js"></script>
-    <title>TP4 JAVASCRIPT</title>
+    <title>Question Reponse</title>
 </head>
 
 <body>
+
     <header>
-        <h1>LES LANGUAGES DE PROGRAMMATION</h1>
+        <h1>CHOISISSEZ LA BONNE REPONSE</h1>
     </header>
-    <div id="conteneur">
-        <div class="centre">
-            <div>
-                <p>Quelle est le meilleur language de programmation en 2022</p>
+    <div class="merci">
+
+        <!--************************** script************************ -->
+
+        <div class="quiz-conteneur" id="quiz">
+
+            <!-- *********************************************************************** -->
+            <div class="quiz header">
+                <h2 id="question">Question Text</h2>
+                <ul>
+                    <li>
+                        <input type="radio" name="reponse" class="reponse" id="a">
+                        <label for="a" id="reponse_a">reponse</label>
+                    </li>
+
+                    <li>
+                        <input type="radio" name="reponse" class="reponse" id="b">
+                        <label for="b" id="reponse_b">reponse</label>
+                    </li>
+
+
+                    <li>
+                        <input type="radio" name="reponse" class="reponse" id="c">
+                        <label for="c" id="reponse_c">reponse</label>
+                    </li>
+
+
+                    <li>
+                        <input type="radio" name="reponse" class="reponse" id="d">
+                        <label for="d" id="reponse_d">reponse</label>
+                    </li>
+                </ul>
             </div>
-            <div class="">
-                <div class="formulaire">
-                    <form action="">
-                        <input type="radio"><label for="">Java</label><br>
-                        <input type="radio"><label for="">C</label><br>
-                        <input type="radio"><label for="">Python</label><br>
-                        <input type="radio"><label for="">Javascript</label><br>
-                    </form>
-                </div>
-                <!--  -->
-                <div id="suivant">
-                    <button type="button" class="ok">Suivant</button>
-                </div>
-            </div>
+            <!-- ****************************************************************** -->
+            <button id="submit">Suivant</button>
+
         </div>
 
-        <div class="scort">
-            <div id="resultat">
-                <h1>souleymane</h1>
-            </div>
-            <div>
-                <button type="button" id="rejoue">Rejouer</button>
-            </div>
-        </div>
+
+
+        <script src="tp4.js "></script>
+
 
     </div>
-
-    <footer>
-        <h3>SONATEL ACADEMY</h3>
-    </footer>
-
 </body>
 
 </html>

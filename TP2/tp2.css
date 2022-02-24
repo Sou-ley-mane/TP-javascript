@@ -5,10 +5,11 @@
         background-color: white;
     }
     
-    p:hover {
+    .survol {
         background-color: blue;
         color: white;
-        padding: 1em 2em;
+        padding: 0em 1em;
+        text-align: center;
     }
     
     .conteneur {
@@ -16,7 +17,8 @@
         justify-content: space-around;
         align-items: center;
         height: 76vh;
-        background-color: rgba(255, 253, 253, 0.972);
+        background-color: rgba(30, 184, 189, 0.972);
+        overflow: hidden;
     }
     
     .bouton {
@@ -26,6 +28,8 @@
     
     .ok {
         margin: 1em;
+        width: 9em;
+        height: 4vh;
     }
     
     header {
@@ -42,4 +46,8 @@
         padding: 1em 2em;
         color: white;
         font-size: 1em;
+    }
+    
+    p {
+        font-size: 1.5em;
     }

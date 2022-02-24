@@ -1,61 +1,60 @@
-//Selection des variables
-const part1 = document.getElementById("ok");
-const table1 = document.createElement('table');
-table1.id = "depart";
-const part2 = document.getElementById("merci");
-const table2 = document.createElement('table');
-table2.id = "desti";
-part2.appendChild(table2);
-const destination = document.getElementById("desti");
+    //Selection des variables
+    const part1 = document.getElementById("ok");
+    const part2 = document.getElementById("merci");
+    const btn1 = document.getElementById("btn1");
+    const btn2 = document.getElementById("btn2");
+
+    //*********************FONCTIONS************************ */
+    let tab = ["Mon premier", "Mon deuxiéme", "Mon troisiéme", "Mon quatriéme"];
+
+    tab.forEach(function(item) {
+        const para = document.createElement('p');
+        para.id = "text";
+        para.innerHTML = item;
+        part1.appendChild(para);
+        // ****************************SELECTION AVEC SURVOLE*******************************************
+        para.addEventListener('mousemove', function() {
+            para.className = "survol";
+        });
+
+        // ****************************ACTIVATION DES BOUTONS*****************************************
+        btn1.addEventListener("click", function() {
+            if (para.className === "survol") {
+                para.parentNode.removeChild(para);
+                part2.appendChild(para);
+                para.className = "";
+            }
+            deactive(btn2, part1);
+            deactive(btn1, part2);
 
 
+        });
 
-//*********************FONCTIONS************************ */
-let tab = ["Mon premier", "Mon deuxiéme", "Mon troisiéme", "Mon quatriéme"];
-
-// Fonction Générer un tableau
-tab.forEach(function(item) {
-    var tr = document.createElement('tr');
-    var td = document.createElement('td');
-    const para = document.createElement('p');
-    // table1.td.onselect();
-    para.innerHTML = item;
-    td.appendChild(para);
-    tr.appendChild(td);
-    table1.appendChild(tr);
-});
-// Affichage du tableau
-part1.appendChild(table1);
+        // ********************************************************************
+        btn2.addEventListener("click", function() {
+            if (para.className === "survol") {
+                para.parentNode.removeChild(para);
+                part1.appendChild(para);
+                para.className = "";
+            }
+            deactive(btn1, part2);
+            deactive(btn2, part1);
 
 
+        });
+
+    });
+    // *******************************FONCTION POUR DESACTIVER LES BOUTONS****************
+    function deactive(bouton, parti) {
+        if (parti.childNodes.lenght === 0) {
+            bouton.disabled = true;
 
 
-// *****************************************************
-//Fonction deplacer
-// function deplacer() {
-// tab.forEach(function(item) {
-//     var tr = document.createElement('tr');
-//     var td = document.createElement('td');
-//     var para = document.createElement('p');
-//     para.innerHTML = item;
-//     td.appendChild(para);
-//     tr.appendChild(td);
-//     table2.appendChild(tr);
-//     part2.appendChild(table2);
+        } else {
+            bouton.disabled = false;
+        }
 
-// });
+    }
 
-let depart = document.getElementById("depart");
-depart.forEach(function(para) {
-    var tr = document.createElement('tr');
-    var td = document.createElement('td');
-    td.innerHTML(para);
-    tr.appendChild(td);
-    table2.appendChild(tr);
-});
-part2.appendChild(table2);
-
-
-
-
-// console.log(destinati);
+    deactive(btn2, part1);
+    deactive(btn1, part2);
